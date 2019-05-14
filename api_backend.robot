@@ -57,7 +57,6 @@ Library           RequestsLibrary
    Create Session    Newman    http://httpbin.org/basic-auth
    ${response}     POST Request      Newman    /user/pass    data=${body}
    Log To Console  ${response.json()}\n
-     ให้มาผิดหรือเปล่าไม่รู้ลองยิงใน postman แล้วไม่ได้ ผมจึงสรุปข้อนี้ว่ามันใช้ไม่ได้
 4. How to stop Newman when any assertion fails?
      robot --exitonfailure .\api_backend.robot
 5. Write test script to execute API (GET Method) with Robot Framework.
